@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- не забыть отключить -->
+    <meta name="robots" content="none" />
+    <!-- описание страницы -->
+    <meta name="Description" content="описание страницы"/>
+    <title>I Am Photographer</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,regular,italic,500" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body>
+    <div class="_body-wrapper">
+        
+        <header class="header index__header">
+    <div class="header__wrapper wrapper">
+        <div class="header__top">
+            <!-- логотип -->
+            <a href="index.html" class="header__logo">
+                <picture>
+                    <source type="image/webp"  srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x">
+                    <img  src="./img/logo.png" srcset="./img/logo.png 1x, ./img/logo@2x.png 2x" alt="надпись Aerospace">
+                </picture>
+            </a>
+            <!-- меню -->
+            <div class="header__menu menu">
+                <!-- иконка бургера -->
+                <button type="button" class="menu__icon icon-menu" aria-label="меню бургер">
+                    <span></span>
+                </button>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a data-goto=".header" href="#" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a data-goto=".aboutme" href="#" class="menu__link">About</a></li>
+                        <li class="menu__item"><a data-goto=".myservices" href="#" class="menu__link">Services</a></li>
+                        <li class="menu__item"><a data-goto=".portfolio" href="#" class="menu__link">Portfolio</a></li>
+                        <li class="menu__item"><a data-goto=".testimonials" href="#" class="menu__link">Testimonials</a>
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">News</a></li>
+                        <li class="menu__item"><a data-goto=".form" href="#" class="menu__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header__body">
+            <h1>I Am <span>Photographer</span></h1>
+            <button class="header__btn"><span class="visually-hidden">дальше</span></button>
+        </div>
+    </div>
+</header>
+
+        <section class="index__aboutme aboutme">
+            <div class="aboutme__wrapper wrapper">
+                <div class="aboutme__row">
+                    <div class="aboutme__images">
+                        <div class="aboutme__image aboutme__image--work">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/about//work_place.webp 1x, ./img/about//work_place@2x.webp 2x">
+                                <img src="./img/about//work_place.png"
+                                    srcset="./img/about//work_place.png 1x, ./img/about//work_place@2x.png 2x"
+                                    alt="клавиатура ноутбука">
+                            </picture>
+                            <div class="aboutme__image-deco">Work Place</div>
+                        </div>
+                        <div class="aboutme__image aboutme__image--photo">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/about//image_base.webp 1x, ./img/about//image_base@2x.webp 2x">
+                                <img src="./img/about//image_base.jpg"
+                                    srcset="./img/about//image_base.jpg 1x, ./img/about//image_base@2x.jpg 2x"
+                                    alt="photo">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="aboutme__info">
+                        <h2 class="aboutme__title">About Me</h2>
+                        <p class="aboutme__text">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax
+                            quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz,
+                            bad nymph, for quick jigs vex!
+                        </p>
+                        <div class="aboutme__skills">
+                            <div class="aboutme__skill">
+                                <div class="aboutme__skill-range"></div>
+                                <div class="aboutme__skill-name">Adobe Photoshop</div>
+                                <div class="aboutme__skill-pr">100%</div>
+                            </div>
+                            <div class="aboutme__skill">
+                                <div class="aboutme__skill-range"></div>
+                                <div class="aboutme__skill-name">Adobe Indesign</div>
+                                <div class="aboutme__skill-pr">65%</div>
+                            </div>
+                            <div class="aboutme__skill">
+                                <div class="aboutme__skill-range"></div>
+                                <div class="aboutme__skill-name">Adobe XD</div>
+                                <div class="aboutme__skill-pr">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="index__services myservices">
+            <div class="myservices__wrapper wrapper">
+                <h2 class="myservices__title _title">My services</h2>
+                <p class="myservices__text">Check out all my services and think what do you want</p>
+                <div class="myservices__services">
+                    <div class="myservices__service service">
+                        <div class="service__ico">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/services/graphic.webp 1x, ./img/services/graphic@2x.webp 2x">
+                                <img src="./img/services/graphic.png"
+                                    srcset="./img/services/graphic.png 1x, ./img/services/graphic@2x.png 2x"
+                                    alt="graphic ico">
+                            </picture>
+                        </div>
+                        <h3 class="service__title">Graphic Design</h3>
+                        <p class="service__text">
+                            When your customers can buy what you sell from others, that’s called competition. That also
+                            makes it a for commodity.
+                        </p>
+                        <div class="service__link" >
+                            <a href="#"><span>Read More</span></a>
+                        </div>
+                    </div>
+                    <div class="myservices__service service">
+                        <div class="service__ico">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/services/photo.webp 1x, ./img/services/photo@2x.webp 2x">
+                                <img src="./img/services/photo.png"
+                                    srcset="./img/services/photo.png 1x, ./img/services/photo@2x.png 2x"
+                                    alt="phoho ico">
+                            </picture>
+                        </div>
+                        <h3 class="service__title">Photography</h3>
+                        <p class="service__text">
+                            Your customers can buy what you sell from the others, that’s called competition. That also
+                            makes it a Line Miliye dilam commodity.
+                        </p>
+                        <div class="service__link">
+                            <a href="#"><span>Read More</span></a>
+                        </div>
+                    </div>
+                    <div class="myservices__service service">
+                        <div class="service__ico">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/services/web.webp 1x, ./img/services/web@2x.webp 2x">
+                                <img src="./img/services/web.png"
+                                    srcset="./img/services/web.png 1x, ./img/services/web@2x.png 2x" alt="web ico">
+                            </picture>
+                        </div>
+                        <h3 class="service__title">Web Design</h3>
+                        <p class="service__text">
+                            Customers can buy what you sell from others, that’s called competition. That also makes it a
+                            commodity That make you sence
+                        </p>
+                        <div class="service__link">
+                            <a href="#"><span>Read More</span></a>
+                        </div>
+                    </div>
+                    <div class="myservices__service service">
+                        <div class="service__ico">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/services/social.webp 1x, ./img/services/social@2x.webp 2x">
+                                <img src="./img/services/social.png"
+                                    srcset="./img/services/social.png 1x, ./img/services/social@2x.png 2x"
+                                    alt="social ico">
+                            </picture>
+                        </div>
+                        <h3 class="service__title">Social Media</h3>
+                        <p class="service__text">
+                            When your customers can buy what you sell from others, that’s called competition. That also
+                            makes it a commodity.
+                        </p>
+                        <div class="service__link">
+                            <a href="#"><span>Read More</span></a>
+                        </div>
+                    </div>
+                    <div class="myservices__service service">
+                        <div class="service__ico">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/services/marketing.webp 1x, ./img/services/marketing@2x.webp 2x">
+                                <img src="./img/services/marketing.png"
+                                    srcset="./img/services/marketing.png 1x, ./img/services/marketing@2x.png 2x"
+                                    alt="marketing ico">
+                            </picture>
+                        </div>
+                        <h3 class="service__title">marketing</h3>
+                        <p class="service__text">
+                            When your customers can buy what you sell from others, that’s called competition. That also
+                            makes it a commodity.
+                        </p>
+                        <div class="service__link">
+                            <a href="#"><span>Read More</span></a>
+                        </div>
+                    </div>
+                    <div class="myservices__service service">
+                        <div class="service__ico">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/services/app.webp 1x, ./img/services/app@2x.webp 2x">
+                                <img src="./img/services/app.png"
+                                    srcset="./img/services/app.png 1x, ./img/services/app@2x.png 2x" alt="app ico">
+                            </picture>
+                        </div>
+                        <h3 class="service__title">App Developing</h3>
+                        <p class="service__text">
+                            When your customers can buy what you sell from others, that’s called competition. That also
+                            makes it a commodity.
+                        </p>
+                        <div class="service__link">
+                            <a href="#"><span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="index__portfolio portfolio">
+            <div class="portfolio__wrapper wrapper">
+                <h2 class="portfolio__title _title">My Portfolio</h2>
+                <p class="portfolio__text">Here is all my work that i maked for some great people</p>
+                <div class="portfolio__items">
+                    <div class="portfolio__item">
+                        <div class="portfolio__image portfolio__image--small">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/work/small01.webp 1x, ./img/work/small01@2x.webp 2x">
+                                <img src="./img/work/small01.jpg"
+                                    srcset="./img/work/small01.jpg 1x, ./img/work/small01@2x.jpg 2x"
+                                    alt="индийские пирамиды">
+                            </picture>
+                            <div class="portfolio__image-overlay">
+                                <span>+</span>
+                                <p>Indian pyramids</p>
+                                <span>Photo</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__image portfolio__image--big">
+                            <picture>
+                                <source type="image/webp" srcset="./img/work/01.webp 1x, ./img/work/01@2x.webp 2x">
+                                <img src="./img/work/01.jpg" srcset="./img/work/01.jpg 1x, ./img/work/01@2x.jpg 2x"
+                                    alt="панарама города">
+                            </picture>
+                            <div class="portfolio__image-overlay">
+                                <span>+</span>
+                                <p>City Panorama</p>
+                                <span>Photo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="portfolio__image portfolio__image--big">
+                            <picture>
+                                <source type="image/webp" srcset="./img/work/02.webp 1x, ./img/work/02@2x.webp 2x">
+                                <img src="./img/work/02.jpg" srcset="./img/work/02.jpg 1x, ./img/work/02@2x.jpg 2x"
+                                    alt="остров в море">
+                            </picture>
+                            <div class="portfolio__image-overlay">
+                                <span>+</span>
+                                <p>Island in the ocean</p>
+                                <span>Photo</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__image portfolio__image--small">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/work/small02.webp 1x, ./img/work/small02@2x.webp 2x">
+                                <img src="./img/work/small02.jpg"
+                                    srcset="./img/work/small02.jpg 1x, ./img/work/small02@2x.jpg 2x" alt="мыс в море">
+                            </picture>
+                            <div class="portfolio__image-overlay">
+                                <span>+</span>
+                                <p>Cape in the sea</p>
+                                <span>Photo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="portfolio__image portfolio__image--small">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/work/small03.webp 1x, ./img/work/small03@2x.webp 2x">
+                                <img src="./img/work/small03.jpg"
+                                    srcset="./img/work/small03.jpg 1x, ./img/work/small03@2x.jpg 2x"
+                                    alt="солнечные панели в городе">
+                            </picture>
+                            <div class="portfolio__image-overlay">
+                                <span>+</span>
+                                <p>Solar panels in the town</p>
+                                <span>Photo</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__image portfolio__image--big">
+                            <picture>
+                                <source type="image/webp" srcset="./img/work/03.webp 1x, ./img/work/03@2x.webp 2x">
+                                <img src="./img/work/03.jpg" srcset="./img/work/03.jpg 1x, ./img/work/03@2x.jpg 2x"
+                                    alt="пирамида из камней">
+                            </picture>
+                            <div class="portfolio__image-overlay">
+                                <span>+</span>
+                                <p>cairn</p>
+                                <span>Photo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__action">
+                    <p>Do you love my work?</p>
+                    <p>Available For Freelance Work!</p>
+                    <button class="portfolio__btn">Hire Me</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="index__testimonials testimonials">
+            <div class="testimonials__wrapper wrapper">
+                <h2 class="testimonials__title _title">Testimonials</h2>
+                <p class="testimonials__text">Lets check what people say about me and my work</p>
+                <div class="testimonials__items">
+                    <div class="testimonials__item item-t">
+                        <div class="item-t__top">
+                            <div class="item-t__photo">
+                                <picture>
+                                    <source type="image/webp"  srcset="./img/testimonials/user_photo01.webp 1x, ./img/testimonials/user_photo01@2x.webp 2x">
+                                    <img  src="./img/testimonials/user_photo01.jpg" srcset="./img/testimonials/user_photo01.jpg 1x, ./img/testimonials/user_photo01@2x.jpg 2x" alt="user photo">
+                                </picture>
+                            </div>
+                            <div class="item-t__user-info">
+                                <p class="item-t__user-name">Jonathon Lee</p>
+                                <p class="item-t__user-work">UI/UX Designer</p>
+                            </div>
+                        </div>
+                        <div class="item-t__text _icon-quote">
+                            Finding the right partner to help make this goal a reality was key. The smart and creative team at Blue Fountain Media has helped anthony.com establish itself as a successful online business and become synonymous with an enjoyable solutions.
+                        </div>
+                    </div>
+                    <div class="testimonials__item item-t">
+                        <div class="item-t__top">
+                            <div class="item-t__photo">
+                                <picture>
+                                    <source type="image/webp"  srcset="./img/testimonials/user_photo02.webp 1x, ./img/testimonials/user_photo02@2x.webp 2x">
+                                    <img  src="./img/testimonials/user_photo02.jpg" srcset="./img/testimonials/user_photo02.jpg 1x, ./img/testimonials/user_photo02@2x.jpg 2x" alt="user photo">
+                                </picture>
+                            </div>
+                            <div class="item-t__user-info">
+                                <p class="item-t__user-name">Emalia Clark</p>
+                                <p class="item-t__user-work">Frontend Dev</p>
+                            </div>
+                        </div>
+                        <div class="item-t__text _icon-quote">
+                            Blue Fountain Media came up with the design on their first try, delivered the complete package on a reasonable budget, and continued to fine-tune it. That wasn't enough -- they also created a plan to market the website and increase traffic.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="index__fun fun">
+            <div class="fun__wrapper wrapper">
+                <div class="fun__items">
+                    <div class="fun__item">
+                        <div class="fun__ico _icon-happy"></div>          
+                        <span class="fun__count">1325</span>
+                        <p class="fun__factor">Happy Customers</p>
+                    </div>
+                    <div class="fun__item">
+                        <div class="fun__ico _icon-project"></div>          
+                        <span class="fun__count">1214</span>
+                        <p class="fun__factor">Completed Project</p>
+                    </div>
+                    <div class="fun__item">
+                        <div class="fun__ico _icon-exp"></div>          
+                        <span class="fun__count">10</span>
+                        <p class="fun__factor">Years Experience</p>
+                    </div>
+                    <div class="fun__item">
+                        <div class="fun__ico _icon-wins"></div>          
+                        <span class="fun__count">375</span>
+                        <p class="fun__factor">Wins Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form action="#" class="index__form form" id="form">
+            <h2 class="form__title _title">Get in Touch</h2>
+            <p class="form__text">Have you any quistion? Send me message without hesitated</p>
+            <label class="form__label">
+                <input type="text" class="form__user-name _req" name="name" id="userName"  placeholder="Your Full Name">
+            </label>
+            <label class="form__label">
+                <input type="email" class="form__user-email _email _req" name="email" id="userEmail"  placeholder="Email Address">
+            </label>
+            <label class="form__label">
+               <textarea class="form__message" name="message" id="userMessage" placeholder="Your Message"></textarea>
+            </label>
+            <button class="form__btn" type="submit">Send Message</button>
+        </form>
+
+
+        <footer class="footer index__footer">
+    <div class="footer__wrapper wrapper">
+        <div class="footer__body">
+            <div class="footer__copy">
+                © Copyright 2020 <a href="#">iGlyphic</a>. All rights reserved
+            </div>
+            <ul class="footer__socials">
+                <li><a href="#" class="footer__link _icon-fb"><span class="visually-hidden">facebook</span></a></li>
+                <li><a href="#" class="footer__link _icon-twitter"><span class="visually-hidden">twitter</span></a></li>
+                <li><a href="#" class="footer__link _icon-inst"><span class="visually-hidden">instagram</span></a></li>
+                <li><a href="#" class="footer__link _icon-youtube"><span class="visually-hidden">youtube</span></a></li>
+                <li><a href="#" class="footer__link _icon-git"><span class="visually-hidden">git</span></a></li>
+                <li><a href="#" class="footer__link _icon-dribbble"><span class="visually-hidden">dribbble</span></a></li>
+                <li><a href="#" class="footer__link _icon-google"><span class="visually-hidden">Google+</span></a></li>
+                <li><a href="#" class="footer__link _icon-tumblr"><span class="visually-hidden">tumblr</span></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    </div>
+    <div id="form-ok" class="form-ok popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__title">OK!</div>
+            <div class="popup__text">
+                Данные отправлены
+            </div>
+        </div>
+    </div>
+</div>
+<div id="form-error" class="form-error popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__title">Ошибка!</div>
+            <div class="popup__text">  
+                Проверьте красные поля!
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="./js/script.js"></script>
+<!-- <script src="./js/script.min.js"></script> -->
+</body>
+
+</html>
