@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,8 @@
     <meta name="Description" content="описание страницы"/>
     <title>I Am Photographer</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,regular,italic,500" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
 </head>
 
 
@@ -18,40 +18,48 @@
     <div class="_body-wrapper">
         
         <header class="header index__header">
-    <div class="header__wrapper wrapper">
-        <div class="header__top">
-            <!-- логотип -->
-            <a href="index.html" class="header__logo">
-                <picture>
-                    <source type="image/webp"  srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x">
-                    <img  src="./img/logo.png" srcset="./img/logo.png 1x, ./img/logo@2x.png 2x" alt="надпись Aerospace">
-                </picture>
-            </a>
-            <!-- меню -->
-            <div class="header__menu menu">
-                <!-- иконка бургера -->
-                <button type="button" class="menu__icon icon-menu" aria-label="меню бургер">
-                    <span></span>
-                </button>
-                <nav class="menu__body">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a data-goto=".header" href="#" class="menu__link">Home</a></li>
-                        <li class="menu__item"><a data-goto=".aboutme" href="#" class="menu__link">About</a></li>
-                        <li class="menu__item"><a data-goto=".myservices" href="#" class="menu__link">Services</a></li>
-                        <li class="menu__item"><a data-goto=".portfolio" href="#" class="menu__link">Portfolio</a></li>
-                        <li class="menu__item"><a data-goto=".testimonials" href="#" class="menu__link">Testimonials</a>
-                        </li>
-                        <li class="menu__item"><a href="#" class="menu__link">News</a></li>
-                        <li class="menu__item"><a data-goto=".form" href="#" class="menu__link">Contact</a></li>
-                    </ul>
-                </nav>
+
+    <div class="header__top ">
+        <div class="header__top-wrapper wrapper">
+            <div class="header__top-body">
+                <!-- логотип -->
+                <a href="index.html" class="header__logo">
+                    <picture>
+                        <source type="image/webp" srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x">
+                        <img src="./img/logo.png" srcset="./img/logo.png 1x, ./img/logo@2x.png 2x"
+                            alt="надпись Aerospace">
+                    </picture>
+                </a>
+                <!-- меню -->
+                <div class="header__menu menu">
+                    <!-- иконка бургера -->
+                    <button type="button" class="menu__icon icon-menu lock-padding" aria-label="меню бургер">
+                        <span></span>
+                    </button>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a data-goto=".header" href="#" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a data-goto=".aboutme" href="#" class="menu__link">About</a></li>
+                            <li class="menu__item"><a data-goto=".myservices" href="#" class="menu__link">Services</a>
+                            </li>
+                            <li class="menu__item"><a data-goto=".portfolio" href="#" class="menu__link">Portfolio</a>
+                            </li>
+                            <li class="menu__item"><a data-goto=".testimonials" href="#"
+                                    class="menu__link">Testimonials</a>
+                            </li>
+                            <li class="menu__item"><a href="#" class="menu__link">News</a></li>
+                            <li class="menu__item"><a data-goto=".form" href="#" class="menu__link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-        <div class="header__body">
-            <h1>I Am <span>Photographer</span></h1>
-            <button class="header__btn"><span class="visually-hidden">дальше</span></button>
-        </div>
     </div>
+    <div class="header__body">
+        <h1>I Am <span>Photographer</span></h1>
+        <button class="header__btn"><span class="visually-hidden">дальше</span></button>
+    </div>
+
 </header>
 
         <section class="index__aboutme aboutme">
@@ -127,7 +135,7 @@
                             When your customers can buy what you sell from others, that’s called competition. That also
                             makes it a for commodity.
                         </p>
-                        <div class="service__link" >
+                        <div class="service__link">
                             <a href="#"><span>Read More</span></a>
                         </div>
                     </div>
@@ -242,11 +250,13 @@
                                     srcset="./img/work/small01.jpg 1x, ./img/work/small01@2x.jpg 2x"
                                     alt="индийские пирамиды">
                             </picture>
-                            <div class="portfolio__image-overlay">
-                                <span>+</span>
-                                <p>Indian pyramids</p>
-                                <span>Photo</span>
-                            </div>
+                            <a href="#">
+                                <div class="portfolio__image-overlay">
+                                    <span>+</span>
+                                    <p>Indian pyramids</p>
+                                    <span>Photo</span>
+                                </div>
+                            </a>
                         </div>
                         <div class="portfolio__image portfolio__image--big">
                             <picture>
@@ -254,11 +264,13 @@
                                 <img src="./img/work/01.jpg" srcset="./img/work/01.jpg 1x, ./img/work/01@2x.jpg 2x"
                                     alt="панарама города">
                             </picture>
-                            <div class="portfolio__image-overlay">
-                                <span>+</span>
-                                <p>City Panorama</p>
-                                <span>Photo</span>
-                            </div>
+                            <a href="#">
+                                <div class="portfolio__image-overlay">
+                                    <span>+</span>
+                                    <p>City Panorama</p>
+                                    <span>Photo</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="portfolio__item">
@@ -268,11 +280,13 @@
                                 <img src="./img/work/02.jpg" srcset="./img/work/02.jpg 1x, ./img/work/02@2x.jpg 2x"
                                     alt="остров в море">
                             </picture>
-                            <div class="portfolio__image-overlay">
-                                <span>+</span>
-                                <p>Island in the ocean</p>
-                                <span>Photo</span>
-                            </div>
+                            <a href="#">
+                                <div class="portfolio__image-overlay">
+                                    <span>+</span>
+                                    <p>Island in the ocean</p>
+                                    <span>Photo</span>
+                                </div>
+                            </a>
                         </div>
                         <div class="portfolio__image portfolio__image--small">
                             <picture>
@@ -281,11 +295,13 @@
                                 <img src="./img/work/small02.jpg"
                                     srcset="./img/work/small02.jpg 1x, ./img/work/small02@2x.jpg 2x" alt="мыс в море">
                             </picture>
-                            <div class="portfolio__image-overlay">
-                                <span>+</span>
-                                <p>Cape in the sea</p>
-                                <span>Photo</span>
-                            </div>
+                          <a href="#">
+                                <div class="portfolio__image-overlay">
+                                    <span>+</span>
+                                    <p>Cape in the sea</p>
+                                    <span>Photo</span>
+                                </div>
+                          </a>
                         </div>
                     </div>
                     <div class="portfolio__item">
@@ -297,11 +313,13 @@
                                     srcset="./img/work/small03.jpg 1x, ./img/work/small03@2x.jpg 2x"
                                     alt="солнечные панели в городе">
                             </picture>
-                            <div class="portfolio__image-overlay">
-                                <span>+</span>
-                                <p>Solar panels in the town</p>
-                                <span>Photo</span>
-                            </div>
+                           <a href="#"> 
+                                <div class="portfolio__image-overlay">
+                                    <span>+</span>
+                                    <p>Solar panels in the town</p>
+                                    <span>Photo</span>
+                                </div>
+                           </a>
                         </div>
                         <div class="portfolio__image portfolio__image--big">
                             <picture>
@@ -309,11 +327,13 @@
                                 <img src="./img/work/03.jpg" srcset="./img/work/03.jpg 1x, ./img/work/03@2x.jpg 2x"
                                     alt="пирамида из камней">
                             </picture>
-                            <div class="portfolio__image-overlay">
-                                <span>+</span>
-                                <p>cairn</p>
-                                <span>Photo</span>
-                            </div>
+                           <a href="#">
+                                <div class="portfolio__image-overlay">
+                                    <span>+</span>
+                                    <p>Cairn</p>
+                                    <span>Photo</span>
+                                </div>
+                           </a>
                         </div>
                     </div>
                 </div>
@@ -334,8 +354,11 @@
                         <div class="item-t__top">
                             <div class="item-t__photo">
                                 <picture>
-                                    <source type="image/webp"  srcset="./img/testimonials/user_photo01.webp 1x, ./img/testimonials/user_photo01@2x.webp 2x">
-                                    <img  src="./img/testimonials/user_photo01.jpg" srcset="./img/testimonials/user_photo01.jpg 1x, ./img/testimonials/user_photo01@2x.jpg 2x" alt="user photo">
+                                    <source type="image/webp"
+                                        srcset="./img/testimonials/user_photo01.webp 1x, ./img/testimonials/user_photo01@2x.webp 2x">
+                                    <img src="./img/testimonials/user_photo01.jpg"
+                                        srcset="./img/testimonials/user_photo01.jpg 1x, ./img/testimonials/user_photo01@2x.jpg 2x"
+                                        alt="user photo">
                                 </picture>
                             </div>
                             <div class="item-t__user-info">
@@ -344,15 +367,20 @@
                             </div>
                         </div>
                         <div class="item-t__text _icon-quote">
-                            Finding the right partner to help make this goal a reality was key. The smart and creative team at Blue Fountain Media has helped anthony.com establish itself as a successful online business and become synonymous with an enjoyable solutions.
+                            Finding the right partner to help make this goal a reality was key. The smart and creative
+                            team at Blue Fountain Media has helped anthony.com establish itself as a successful online
+                            business and become synonymous with an enjoyable solutions.
                         </div>
                     </div>
                     <div class="testimonials__item item-t">
                         <div class="item-t__top">
                             <div class="item-t__photo">
                                 <picture>
-                                    <source type="image/webp"  srcset="./img/testimonials/user_photo02.webp 1x, ./img/testimonials/user_photo02@2x.webp 2x">
-                                    <img  src="./img/testimonials/user_photo02.jpg" srcset="./img/testimonials/user_photo02.jpg 1x, ./img/testimonials/user_photo02@2x.jpg 2x" alt="user photo">
+                                    <source type="image/webp"
+                                        srcset="./img/testimonials/user_photo02.webp 1x, ./img/testimonials/user_photo02@2x.webp 2x">
+                                    <img src="./img/testimonials/user_photo02.jpg"
+                                        srcset="./img/testimonials/user_photo02.jpg 1x, ./img/testimonials/user_photo02@2x.jpg 2x"
+                                        alt="user photo">
                                 </picture>
                             </div>
                             <div class="item-t__user-info">
@@ -361,7 +389,9 @@
                             </div>
                         </div>
                         <div class="item-t__text _icon-quote">
-                            Blue Fountain Media came up with the design on their first try, delivered the complete package on a reasonable budget, and continued to fine-tune it. That wasn't enough -- they also created a plan to market the website and increase traffic.
+                            Blue Fountain Media came up with the design on their first try, delivered the complete
+                            package on a reasonable budget, and continued to fine-tune it. That wasn't enough -- they
+                            also created a plan to market the website and increase traffic.
                         </div>
                     </div>
                 </div>
@@ -372,22 +402,22 @@
             <div class="fun__wrapper wrapper">
                 <div class="fun__items">
                     <div class="fun__item">
-                        <div class="fun__ico _icon-happy"></div>          
+                        <div class="fun__ico _icon-happy"></div>
                         <span class="fun__count">1325</span>
                         <p class="fun__factor">Happy Customers</p>
                     </div>
                     <div class="fun__item">
-                        <div class="fun__ico _icon-project"></div>          
+                        <div class="fun__ico _icon-project"></div>
                         <span class="fun__count">1214</span>
                         <p class="fun__factor">Completed Project</p>
                     </div>
                     <div class="fun__item">
-                        <div class="fun__ico _icon-exp"></div>          
+                        <div class="fun__ico _icon-exp"></div>
                         <span class="fun__count">10</span>
                         <p class="fun__factor">Years Experience</p>
                     </div>
                     <div class="fun__item">
-                        <div class="fun__ico _icon-wins"></div>          
+                        <div class="fun__ico _icon-wins"></div>
                         <span class="fun__count">375</span>
                         <p class="fun__factor">Wins Awards</p>
                     </div>
@@ -399,13 +429,14 @@
             <h2 class="form__title _title">Get in Touch</h2>
             <p class="form__text">Have you any quistion? Send me message without hesitated</p>
             <label class="form__label">
-                <input type="text" class="form__user-name _req" name="name" id="userName"  placeholder="Your Full Name">
+                <input type="text" class="form__user-name _req" name="name" id="userName" placeholder="Your Full Name">
             </label>
             <label class="form__label">
-                <input type="email" class="form__user-email _email _req" name="email" id="userEmail"  placeholder="Email Address">
+                <input type="email" class="form__user-email _email _req" name="email" id="userEmail"
+                    placeholder="Email Address">
             </label>
             <label class="form__label">
-               <textarea class="form__message" name="message" id="userMessage" placeholder="Your Message"></textarea>
+                <textarea class="form__message" name="message" id="userMessage" placeholder="Your Message"></textarea>
             </label>
             <button class="form__btn" type="submit">Send Message</button>
         </form>
@@ -452,8 +483,8 @@
     </div>
 </div>
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-<script src="./js/script.js"></script>
-<!-- <script src="./js/script.min.js"></script> -->
+<!-- <script src="./js/script.js"></script> -->
+<script src="./js/script.min.js"></script>
 </body>
 
 </html>
